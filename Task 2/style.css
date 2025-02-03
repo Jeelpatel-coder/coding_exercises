@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Raleway", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image: url('https://images.pexels.com/photos/1374442/pexels-photo-1374442.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box{
+    width: 20%;
+    height: 25%;
+    background-color: white;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.box .i1{
+    align-self: flex-end;
+    margin-bottom: 10px;
+    margin-right: 20px;
+    background-color: gray;
+    color: white;
+    padding: 5px 5px;
+    cursor: pointer;
+}
+
+.box p{
+    margin-bottom: 50px;
+    font-size: 19px;
+    font-weight: 500;
+}
+
+.bottom{
+    position: absolute;
+    bottom: 40px;
+    left: 100px;
+    background-color: transparent;
+    border: 3px solid white;
+    padding: 10px 15px;
+    font-size: 19px;
+    font-weight: 500;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 500px) {
+    .box{
+        width: 50%;
+    }
+    
+    .box p{
+        margin-bottom: 50px;
+    }
+    
+    .bottom{
+        bottom: 50px;
+        left: 90px; 
+    }
+}
